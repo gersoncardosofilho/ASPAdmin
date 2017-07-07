@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ASPAdmin.Interfaces
 {
-    public interface IUser
+    public interface IDataService
     {
         Task<User> GetUserAsync(string userName, string userPassword);
     }

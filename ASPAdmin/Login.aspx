@@ -21,11 +21,12 @@
             <div class="form-signin">
                
                 <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <asp:TextBox runat="server" ID="txtUsername" TextMode="Email" CssClass="form-control" placeholder="Email"/>
                 <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <asp:TextBox runat="server" ID="txtUserpassword" TextMode="Password" CssClass="form-control" placeholder="Senha"/>
                 
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <asp:Button Text="LOGIN" runat="server" ID="btnLogin" OnClick="btnLogin_Click" CssClass="btn btn-lg btn-primary btn-block" />
+
             </div>
 
         </div>
